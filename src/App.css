@@ -1,38 +1,189 @@
-.App {
-  text-align: center;
+.HomePageWapper{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.formWrapper{
+  background: #282a36;
+  padding: 20px;
+  border-radius: 15px;
+  width: 400px;
+  max-width: 90%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputGroup{
+  display: flex;
+  flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.inputBox{
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-bottom: 14px;
+  background-color: #eee;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn{
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.joinBtn{
+  background-color: #4aed88;
+  width: 100px;
+  margin-left: auto;
+  font-weight: bold;
+}
+
+.joinBtn:hover{
+  background-color: #2b824e;
+}
+
+.createInfo{
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.createNewBtn{
+  color: #4aed88;
+  text-decoration: none;
+  border-bottom: 1px solid #4aed88;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.createNewBtn:hover{
+  color: #368654; 
+  border-color: #368654;
+}
+
+.mainWrap{
+  display: grid;
+  grid-template-columns: 1fr 330px;
+  height: 100vh;
+}
+
+.aside{
+  background: rgb(28, 30, 41);
+  padding: 16px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.asideInner{
+  flex: 1;
+}
+
+.ClientList{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.client {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-weight: bold;
+}
+
+.leaveBtn {
+  margin-top: 20px;
+  background-color: #2b824e;
+}
+
+.CodeMirror{
+  font-size: 20px;
+  min-height: 100vh
+}
+
+.video-call-Container{
+  padding: 0;
+}
+
+.User-Client-Video{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.video1{
+  border: 5px solid #368654;
+  border-radius: 10px;
+}
+.connectedInfo{
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
+  border-top: 2px solid #2b824e ;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.video-call-Container{
+  padding-bottom: 10px;
+}
+.video-calling-area{
+  border-bottom: 2px solid #2b824e;
+}
+.Stream-call-btn{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3px;
+  gap: 150px;
+  margin-bottom: 3px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.file-transfer-area{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#file-transfer{
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+.file-transfer-input{
+  display: none;
+}
+.file-transfer-label{
+  display: flex;
+  text-align: center;
+  height: 100px;
+  width: 150px;
+  border-radius: 6px;
+  border: 1px dashed #fff;
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.file-transfer-label:hover{
+  color: #368654;
+  border: 1px dashed #368654;
+}
+
+.file-transfer-btn{
+  margin-top: 30px;
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+  color: #2b824e;
+  font-weight: bold;
+}
+
+.file-transfer-btn:hover{
+  color: #fff;
+  background-color: #368654;
 }
